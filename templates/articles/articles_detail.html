@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} {{ article.title }} {% endblock title %}
+
+{% block content %}
+  <h1>{{ article.title }}</h1>
+
+  <p>{{ article.body }}</p>
+
+  <div class="text-muted">
+    <h6>Created by:</h6>
+    {{ article.author }} | in {{ article.date }}
+  </div>
+  
+{% endblock content %}
